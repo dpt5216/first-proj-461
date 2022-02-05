@@ -163,13 +163,13 @@ class Parser:
 
 #   Error type for passing strings
     def errorStd(self, exp, saw):
-        print ("Syntax error: expecting: " + exp \
+        print ("Syntax error: expecting literally: " + exp \
                + "; saw: " + saw )
         sys.exit(1)
 
 #   Error type for passing token types
     def errorTyp(self, exp, saw):
-        print ("Syntax error: expecting: " + typeToString(exp) \
+        print ("Syntax error: expecting type: " + typeToString(exp) \
                + "; saw: " + typeToString(saw) )
         sys.exit(1)
 
